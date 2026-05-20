@@ -1055,29 +1055,128 @@
     /* ════════════════════════════════
        RESPONSIVE
     ════════════════════════════════ */
+
+    /* ── Tablet (≤900px) ── */
     @media (max-width: 900px) {
       .hero-inner {
         grid-template-columns: 1fr;
-        align-items: center;
+        align-items: flex-end;
         min-height: auto;
       }
-      .hero-content { padding: 100px 0 48px; }
-      .hero-photo-wrap { justify-content: flex-end; }
-      .hero-photo { max-height: 50vh; }
+      .hero-content {
+        padding: 80px 0 32px;
+        min-height: auto;
+      }
+      .hero-photo-wrap {
+        justify-content: flex-end;
+        margin-top: -40px;
+      }
+      .hero-photo { max-height: 55vh; }
+
+      .conclusion-inner { grid-template-columns: 1fr; }
+      .conclusion-compass { display: none; }
     }
 
+    /* ── Mobile (≤768px) ── */
     @media (max-width: 768px) {
-      .section { padding: 72px 20px; }
+      .section { padding: 64px 20px; }
+
+      /* Hero */
+      .hero { padding: 0 20px; }
+      .hero-photo { max-height: 45vh; }
+      .hero-badge { font-size: 10px; margin-bottom: 20px; }
+      .hero-sub { margin-bottom: 32px; }
+      .hero-author-name { font-size: 28px; }
+      .hero-role-badge { font-size: 14px; padding: 10px 18px; }
+
+      /* Grids → single col */
       .goals-grid { grid-template-columns: 1fr; }
       .personas-grid { grid-template-columns: 1fr; }
       .tool-split { grid-template-columns: 1fr; }
       .check-grid { grid-template-columns: 1fr; }
-      .cta-card { padding: 36px 24px; }
+      .intro-bottom { grid-template-columns: 1fr; gap: 20px; }
+
+      /* Factors */
       .factor { grid-template-columns: 52px 1fr; }
       .factor-n { font-size: 34px; }
-      .hero-inner { grid-template-columns: 1fr; }
-      .hero-content { padding: 80px 0 32px; }
-      .hero-photo { max-height: 45vh; }
+
+      /* Bubble */
+      .bubble { padding: 36px 24px 24px; }
+      .bubble-text { white-space: normal; font-size: clamp(17px, 5vw, 22px); }
+
+      /* Cards */
+      .blockquote { padding: 36px 28px 32px; }
+      .dark-card { padding: 28px 24px; }
+      .bridge { padding: 28px 24px; }
+      .cta-card { padding: 36px 24px; }
+      .nosystem-tail-inner { padding: 20px 24px; }
+
+      /* Personas tagline */
+      .personas-tagline-inner { padding: 14px 24px; font-size: 16px; }
+
+      /* Tools */
+      .tool-card { padding: 28px 24px; }
+      .tool-name { font-size: 24px; }
+
+      /* Conclusion */
+      .conclusion-inner { grid-template-columns: 1fr; }
+      .conclusion-compass { display: none; }
+    }
+
+    /* ── Small mobile (≤480px) ── */
+    @media (max-width: 480px) {
+      .section { padding: 52px 16px; }
+
+      .hero { padding: 0 16px; }
+      .hero-photo-wrap { display: none; }
+      .hero-content { padding: 72px 0 48px; min-height: 100vh; justify-content: center; }
+
+      .container { max-width: 100%; }
+      .container-wide { max-width: 100%; }
+
+      .pull-quote { font-size: 18px; padding-left: 20px; }
+      .reply-card { padding: 24px 20px; }
+      .reply-text { font-size: 18px; }
+
+      .goal-card { padding: 24px 20px; }
+      .goal-num { font-size: 44px; }
+
+      .persona-card { padding: 28px 24px; }
+      .persona-name { font-size: 30px; }
+
+      .factor-list { margin-top: 36px; }
+      .factor { gap: 0; grid-template-columns: 44px 1fr; padding: 22px 0; }
+      .factor-n { font-size: 28px; }
+      .factor-title { font-size: 20px; }
+
+      .dark-card { padding: 24px 20px; }
+      .dark-card-title { font-size: 18px; }
+
+      .tool-split { gap: 10px; }
+      .tool-case { padding: 16px; }
+
+      .q-item { gap: 12px; padding: 16px 0; }
+      .trap-end { font-size: 20px; }
+
+      .check-item { padding: 16px 18px; }
+      .selfcheck-note { font-size: 16px; }
+
+      .blockquote { padding: 28px 20px; }
+      .blockquote::before { font-size: 90px; }
+
+      .nosystem-tail-inner { padding: 18px 20px; }
+
+      .pillar-text { font-size: 15px; }
+
+      .closing-big { font-size: 22px; }
+      .course-label { font-size: 18px; }
+
+      .social-footer { padding: 60px 16px; }
+      .social-name { font-size: 26px; }
+      .social-links { gap: 10px; }
+      .slink { padding: 10px 18px; font-size: 13px; }
+
+      .btn { width: 100%; justify-content: center; }
     }
   </style>
 </head>
