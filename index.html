@@ -679,7 +679,7 @@
       margin-top: 12px;
     }
 
-    .q-text { font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.6; }
+    .q-text { font-size: 16px; font-weight: 700; color: var(--text); line-height: 1.6; }
 
     .trap-end {
       font-family: 'Manrope', sans-serif;
@@ -701,7 +701,7 @@
 
     .check-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 14px;
     }
 
@@ -852,12 +852,13 @@
 
     .conclusion-compass {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      margin-top: -40px;
     }
     .conclusion-compass img {
       width: 100%;
-      max-width: 450px;
+      max-width: 520px;
       filter: drop-shadow(0 16px 48px rgba(0,0,0,0.4));
     }
 
@@ -879,7 +880,7 @@
 
     .pillar-dash { width: 24px; height: 2px; background: var(--coral); flex-shrink: 0; margin-top: 12px; }
 
-    .pillar-text { font-size: 16px; color: rgba(255,255,255,0.78); font-weight: 500; line-height: 1.65; }
+    .pillar-text { font-size: 16px; color: rgba(255,255,255,0.78); font-weight: 700; line-height: 1.65; }
     .pillar-text strong { color: #fff; font-weight: 500; }
 
     /* ════════════════════════════════
@@ -1210,7 +1211,6 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-content">
-      <span class="hero-badge fade-in">Бонус PDF №1</span>
       <h1 class="fade-in d1">
         Почему чужой портфель<br>может не подойти <em>именно вам</em>
       </h1>
@@ -1260,6 +1260,8 @@
     </div>
 
     <p class="fade-in" style="font-weight: 500; color: var(--text-mid); margin-top: 8px;">Не потому что он плохой. А потому что он собирался под другого человека — с другой жизнью, другими целями, другим запасом прочности и другим уровнем спокойствия.</p>
+
+    <p class="fade-in" style="font-weight: 500; color: var(--text-mid); margin-top: 24px;">Давайте разберёмся, почему так происходит — и что с этим делать.</p>
   </div>
 </section>
 
@@ -1268,7 +1270,8 @@
   <div class="container-wide">
     <p class="label fade-in">Разбираемся</p>
     <h2 class="heading fade-in d1">«Правильный портфель» — <em>это миф</em></h2>
-    <p class="lead fade-in d2">Не существует одной схемы, которая подойдёт всем. Портфель — это ответ на вопрос: «Какую задачу я решаю своими деньгами?» А задачи у людей — разные.</p>
+    <p class="lead fade-in d2" style="max-width: 100%;">Мне часто пишут: «Татьяна, а какой портфель считается правильным?»<br>Каждый раз хочется ответить честно: никакой.</p>
+    <p class="lead fade-in d2" style="max-width: 100%; margin-top: 16px;">Не существует одной схемы, которая подойдёт всем. Потому что портфель — это не набор тикеров на экране. Это ответ на вопрос: «Какую задачу я решаю своими деньгами?» А задачи у людей — разные.</p>
 
     <div class="goals-grid">
       <div class="goal-card fade-in d1">
@@ -1284,13 +1287,14 @@
         <p class="goal-text">Третий — просто перестать тревожиться каждый раз, когда смотрит на свой баланс.</p>
       </div>
     </div>
+
+    <p class="lead fade-in" style="margin-top: 40px;">Инструменты при этом могут быть одинаковыми. А внутреннее ощущение — полярно разным.</p>
   </div>
 </section>
 
 <!-- ══ PERSONAS ══════════════════════════════ -->
 <section class="section personas">
   <div class="container-wide">
-    <p class="label fade-in">Два реальных типажа</p>
     <h2 class="heading fade-in d1">Одни инструменты. <em>Разная жизнь.</em></h2>
 
     <div class="personas-grid">
@@ -1322,7 +1326,6 @@
 <!-- ══ FACTORS ══════════════════════════════ -->
 <section class="section factors">
   <div class="container">
-    <p class="label fade-in">Прежде чем выбирать инструменты</p>
     <h2 class="heading fade-in d1">Что на самом деле <em>определяет</em> ваш подход</h2>
     <p class="lead fade-in d2">Честно ответьте себе на несколько вопросов. Не рынку. Не блогеру. Себе.</p>
 
@@ -1387,6 +1390,8 @@
       </ul>
     </div>
 
+    <p class="fade-in" style="color: rgba(255,255,255,0.65); font-weight: 500; margin: 24px 0 0;">Я видела это десятки раз.</p>
+
     <p class="italic-close fade-in">
       Проблема не в рынке. Проблема — в том, что у человека нет своей системы. Есть набор чужих решений, которые он не может объяснить сам себе.
     </p>
@@ -1396,7 +1401,6 @@
 <!-- ══ TOOLS ══════════════════════════════════ -->
 <section class="section tools">
   <div class="container">
-    <p class="label fade-in">На конкретных примерах</p>
     <h2 class="heading fade-in d1">Один и тот же инструмент — <em>разная роль</em></h2>
 
     <div class="tool-cards">
@@ -1452,9 +1456,9 @@
 <!-- ══ TRAP ══════════════════════════════════ -->
 <section class="section trap">
   <div class="container">
-    <p class="label fade-in">Важно понять</p>
     <h2 class="heading fade-in d1">Почему вопрос «что купить?» — <em>это ловушка</em></h2>
 
+    <p class="trap-intro fade-in d2">Я понимаю, почему он возникает первым. Хочется конкретики. Хочется действия. Хочется ощущения, что ты уже что-то делаешь.</p>
     <p class="trap-intro fade-in d2">«Что купить» без ответа на «зачем» — это как выбирать лекарство без диагноза. Может повезти. А может — нет.</p>
 
     <p class="q-label fade-in">Вопросы, которые стоит задать себе до покупки первой бумаги</p>
@@ -1491,7 +1495,6 @@
 <!-- ══ SELF-CHECK ══════════════════════════════ -->
 <section class="section selfcheck">
   <div class="container-wide">
-    <p class="label fade-in">Маленькая самопроверка</p>
     <h2 class="heading fade-in d1">Что для вас сейчас <em>важнее всего?</em></h2>
     <p class="lead fade-in d2">Отметьте то, что откликается. Не для кого-то. Для себя.</p>
 
@@ -1523,7 +1526,7 @@
     </div>
 
     <p class="selfcheck-note fade-in">
-      Ваш ответ не совпадает с ответом вашего соседа, коллеги или подруги.<br>
+      Нет правильного ответа. Но обратите внимание: ваш ответ не совпадает с ответом вашего соседа, коллеги или подруги.<br>
       Это ещё одно доказательство того, что универсальных портфелей не бывает.
     </p>
   </div>
@@ -1532,8 +1535,9 @@
 <!-- ══ NO SYSTEM ══════════════════════════════ -->
 <section class="section nosystem">
   <div class="container">
-    <p class="label fade-in">Что происходит без системы</p>
     <h2 class="heading fade-in d1">Знакомая <em>картина</em></h2>
+
+    <p class="fade-in" style="font-weight: 500; color: var(--text-mid); margin-bottom: 28px;">Я наблюдаю это регулярно. Человек приходит и описывает примерно одну и ту же картину:</p>
 
     <div class="blockquote fade-in d2">
       <p class="blockquote-text">«Я что-то покупал. Потом продал. Потом купил другое по совету. Потом испугался и вышел. Потом снова зашёл. Сейчас не понимаю, что у меня в портфеле и зачем.»</p>
@@ -1562,32 +1566,36 @@
 <!-- ══ CONCLUSION ══════════════════════════════ -->
 <section class="section conclusion">
   <div class="container-wide">
-    <p class="label fade-in">Главный вывод</p>
+    <h2 class="heading fade-in" style="margin-bottom: 32px;">
+      Фондовый рынок — это не про «угадать акцию, которая вырастет».
+    </h2>
+    <p class="lead fade-in d1" style="color:var(--coral-light); font-size: clamp(22px, 3vw, 38px); font-weight: 800; margin-bottom: 35px; line-height: 1.2;">
+      Это про то, чтобы собрать свою систему.
+    </p>
+
     <div class="conclusion-inner">
       <div class="conclusion-left">
-        <h2 class="heading fade-in d1">
-          Фондовый рынок — это про то, чтобы собрать <em style="color:var(--coral-light);">свою систему</em>
-        </h2>
+        <span style="display:inline-flex; align-items:center; padding:12px 24px; border-radius:50px; background:rgba(255,255,255,0.1); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,0.2); box-shadow:inset 0 1px 0 rgba(255,255,255,0.15), 0 4px 20px rgba(0,0,0,0.2); font-size:17px; font-weight:500; color:rgba(255,255,255,0.92); letter-spacing:0.01em; margin-bottom:15px;">Такую, которая учитывает:</span>
         <div class="pillars fade-in d2">
           <div class="pillar">
             <div class="pillar-dash"></div>
-            <p class="pillar-text"><strong>вашу цель</strong> — не чужую</p>
+            <p class="pillar-text"><strong>вашу цель</strong> — не чужую;</p>
           </div>
           <div class="pillar">
             <div class="pillar-dash"></div>
-            <p class="pillar-text"><strong>ваш срок</strong> — не абстрактный</p>
+            <p class="pillar-text"><strong>ваш срок</strong> — не абстрактный;</p>
           </div>
           <div class="pillar">
             <div class="pillar-dash"></div>
-            <p class="pillar-text"><strong>ваше отношение к риску</strong> — честное, а не бравурное</p>
+            <p class="pillar-text"><strong>ваше отношение к риску</strong> — честное, а не бравурное;</p>
           </div>
           <div class="pillar">
             <div class="pillar-dash"></div>
-            <p class="pillar-text"><strong>вашу жизненную ситуацию</strong> — реальную, а не идеальную</p>
+            <p class="pillar-text"><strong>вашу жизненную ситуацию</strong> — реальную, а не идеальную;</p>
           </div>
           <div class="pillar">
             <div class="pillar-dash"></div>
-            <p class="pillar-text"><strong>ваш уровень спокойствия</strong> — потому что инвестиции, от которых вы не спите, не стоят ни одного рубля</p>
+            <p class="pillar-text"><strong>ваш уровень спокойствия</strong> — потому что инвестиции, от которых вы не спите, не стоят ни одного рубля.</p>
           </div>
         </div>
       </div>
@@ -1595,6 +1603,10 @@
         <img src="image-Photoroom (16).png" alt="Компас">
       </div>
     </div>
+
+    <p class="italic-close fade-in" style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 52px; padding-top: 40px; color:rgba(255,255,255,0.82);">
+      Именно поэтому персональный подход — это не маркетинговое слово. Это единственное, что реально работает на длинной дистанции.
+    </p>
   </div>
 </section>
 
@@ -1602,9 +1614,9 @@
 <section class="section cta">
   <div class="container">
     <div class="cta-card fade-in">
-      <p class="label">Курс</p>
       <h2 class="heading">Фондовый рынок. Твой портфель</h2>
       <p class="cta-tagline">Не готовые портфели — ваша собственная система.</p>
+      <p class="cta-tagline" style="margin-bottom: 32px;">Потому что — и я надеюсь, после этого PDF это стало понятнее — готовые портфели не работают одинаково для всех.</p>
 
       <ul class="benefit-list">
         <li class="benefit">
@@ -1638,6 +1650,9 @@
           <p class="benefit-text">Получаете поддержку, чтобы не сбиться в первые месяцы</p>
         </li>
       </ul>
+
+      <p class="cta-tagline" style="margin: 32px 0 16px;">Это не волшебная таблетка. Это работа. Но работа, после которой вы перестаете действовать вслепую и начинаете понимать, что делаете и зачем.</p>
+      <p class="cta-tagline" style="margin-bottom: 40px;">Не потому что кто-то дал вам список бумаг. А потому что вы сами разобрались в своей ситуации — и собрали систему под неё.</p>
 
       <a href="#" class="btn">
         Узнать подробнее о курсе
