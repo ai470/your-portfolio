@@ -948,6 +948,35 @@
       box-shadow: 0 10px 28px rgba(254,151,63,0.35);
     }
 
+    .author-note {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .author-note-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid rgba(1,51,76,0.12);
+    }
+    .author-note-avatar img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center top;
+      margin-left: -15%;
+      margin-top: -5%;
+    }
+    .author-note-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-mid);
+      line-height: 1.55;
+    }
+
     /* ════════════════════════════════
        CLOSING
     ════════════════════════════════ */
@@ -1146,12 +1175,13 @@
       .hero-photo-wrap {
         display: flex;
         justify-content: center;
-        margin-top: 0;
-        padding-bottom: 40px;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: -20px;
       }
       .hero-photo {
-        max-height: 72vw;
-        width: 72vw;
+        width: 100%;
+        max-height: none;
         object-fit: contain;
         object-position: bottom center;
       }
@@ -1616,7 +1646,12 @@
     <div class="cta-card fade-in">
       <h2 class="heading">Фондовый рынок. Твой портфель</h2>
       <p class="cta-tagline">Не готовые портфели — ваша собственная система.</p>
-      <p class="cta-tagline" style="margin-bottom: 32px;">Потому что — и я надеюсь, после этого PDF это стало понятнее — готовые портфели не работают одинаково для всех.</p>
+      <div class="author-note" style="margin-bottom: 36px;">
+        <div class="author-note-avatar">
+          <img src="tatyana-avatar.png" alt="Татьяна Волкова">
+        </div>
+        <p class="author-note-text">Потому что — и я надеюсь, после этого PDF это стало понятнее — готовые портфели не работают одинаково для всех.</p>
+      </div>
 
       <ul class="benefit-list">
         <li class="benefit">
@@ -1652,12 +1687,13 @@
       </ul>
 
       <p class="cta-tagline" style="margin: 32px 0 16px;">Это не волшебная таблетка. Это работа. Но работа, после которой вы перестаете действовать вслепую и начинаете понимать, что делаете и зачем.</p>
-      <p class="cta-tagline" style="margin-bottom: 40px;">Не потому что кто-то дал вам список бумаг. А потому что вы сами разобрались в своей ситуации — и собрали систему под неё.</p>
+      <p class="cta-tagline" style="margin-bottom: 40px; font-weight: 800; color: var(--dark);">Не потому что кто-то дал вам список бумаг. А потому что вы сами разобрались в своей ситуации — и собрали систему под неё.</p>
 
       <a href="#" class="btn">
         Узнать подробнее о курсе
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
+
     </div>
   </div>
 </section>
@@ -1667,7 +1703,7 @@
   <div class="container">
     <p class="closing-big fade-in">
       Именно так работают инвестиции, которые не вызывают тревогу.<br>
-      Не идеальный портфель. <em>А ваш портфель.</em>
+      Не идеальный портфель. <em style="font-weight: 800;">А ваш портфель.</em>
     </p>
 
     <div class="closing-lines fade-in d1">
