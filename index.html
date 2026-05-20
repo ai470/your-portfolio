@@ -1128,8 +1128,20 @@
       .section { padding: 52px 16px; }
 
       .hero { padding: 0 16px; }
-      .hero-photo-wrap { display: none; }
-      .hero-content { padding: 72px 0 48px; min-height: 100vh; justify-content: center; }
+      .hero-inner { display: flex; flex-direction: column; }
+      .hero-content { padding: 60px 0 24px; min-height: auto; justify-content: flex-start; }
+      .hero-photo-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        padding-bottom: 40px;
+      }
+      .hero-photo {
+        max-height: 72vw;
+        width: 72vw;
+        object-fit: contain;
+        object-position: bottom center;
+      }
 
       .container { max-width: 100%; }
       .container-wide { max-width: 100%; }
