@@ -1169,15 +1169,26 @@
     @media (max-width: 480px) {
       .section { padding: 52px 16px; }
 
-      .hero { padding: 0 16px; }
-      .hero-inner { display: flex; flex-direction: column; }
-      .hero-content { padding: 60px 0 24px; min-height: auto; justify-content: flex-start; }
+      .hero { padding: 0; }
+      .hero-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: auto;
+        max-width: 100%;
+        padding: 0;
+      }
+      .hero-content {
+        padding: 60px 20px 24px;
+        min-height: auto;
+        justify-content: flex-start;
+      }
       .hero-photo-wrap {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         width: 100%;
-        margin-top: -20px;
+        margin-top: 0;
       }
       .hero-photo {
         width: 100%;
